@@ -1,0 +1,964 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>SEM - LearnTEM</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sem" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="LearnTEM" class="md-header__button md-logo" aria-label="LearnTEM" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LearnTEM
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SEM
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="LearnTEM" class="md-nav__button md-logo" aria-label="LearnTEM" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    LearnTEM
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        zsx的电子显微分析预习笔记
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC1%E7%AB%A0-%E7%94%B5%E5%AD%90%E5%85%89%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        电子光学基础
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC2%E7%AB%A0-%E9%80%8F%E5%B0%84%E7%94%B5%E5%AD%90%E6%98%BE%E5%BE%AE%E9%95%9C/" class="md-nav__link">
+        TEM
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC3%E7%AB%A0-%E7%94%B5%E5%AD%90%E5%92%8C%E7%89%A9%E8%B4%A8%E7%9A%84%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8/" class="md-nav__link">
+        电子与物质的相互作用
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC4%E7%AB%A0-%E7%94%B5%E5%AD%90%E8%A1%8D%E5%B0%84/" class="md-nav__link">
+        电子衍射
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC5%E7%AB%A0-%E5%A4%8D%E6%9D%82%E7%94%B5%E5%AD%90%E8%A1%8D%E5%B0%84%E8%B0%B1/" class="md-nav__link">
+        复杂电子衍射谱
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC6%E7%AB%A0-%E7%94%B5%E5%AD%90%E5%83%8F%E8%A1%AC%E5%BA%A6/" class="md-nav__link">
+        电子像衬度原理
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          SEM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        SEM
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sem_1" class="md-nav__link">
+    SEM基本结构与原理
+  </a>
+  
+    <nav class="md-nav" aria-label="SEM基本结构与原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    基本原理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    工作方式
+  </a>
+  
+    <nav class="md-nav" aria-label="工作方式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    二次电子
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    背散射电子
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    吸收电子
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x" class="md-nav__link">
+    特征X射线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    俄歇电子
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sem_2" class="md-nav__link">
+    SEM衬度原理
+  </a>
+  
+    <nav class="md-nav" aria-label="SEM衬度原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    二次电子
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    背散射电子
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    扫描透射电子像
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    分辨率与放大倍数
+  </a>
+  
+    <nav class="md-nav" aria-label="分辨率与放大倍数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    电子束影响
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    信噪比影响
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    放大倍数
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    性能特点
+  </a>
+  
+    <nav class="md-nav" aria-label="性能特点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    分辨率
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    放大倍数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    景深
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    背散射电子衍射分析
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    可变气压/环境扫描电镜
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    金属材料典型断口分析
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sem_1" class="md-nav__link">
+    SEM基本结构与原理
+  </a>
+  
+    <nav class="md-nav" aria-label="SEM基本结构与原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    基本原理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    工作方式
+  </a>
+  
+    <nav class="md-nav" aria-label="工作方式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    二次电子
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    背散射电子
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    吸收电子
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x" class="md-nav__link">
+    特征X射线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    俄歇电子
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sem_2" class="md-nav__link">
+    SEM衬度原理
+  </a>
+  
+    <nav class="md-nav" aria-label="SEM衬度原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    二次电子
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    背散射电子
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    扫描透射电子像
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    分辨率与放大倍数
+  </a>
+  
+    <nav class="md-nav" aria-label="分辨率与放大倍数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    电子束影响
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    信噪比影响
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    放大倍数
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    性能特点
+  </a>
+  
+    <nav class="md-nav" aria-label="性能特点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    分辨率
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    放大倍数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    景深
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    背散射电子衍射分析
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    可变气压/环境扫描电镜
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    金属材料典型断口分析
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="sem">SEM</h1>
+<h2 id="sem_1">SEM基本结构与原理</h2>
+<h3 id="_1">基本原理</h3>
+<p>电子束会聚后在样品表面扫描，产生各种信号被接收</p>
+<h3 id="_2">工作方式</h3>
+<p><img alt="image-20221217210426954" src="../%E7%AC%AC7%E7%AB%A0-SEM-img/image-20221217210426954.png" /></p>
+<h4 id="_3">二次电子</h4>
+<ul>
+<li>反映试样表面形貌，主要用于形貌观察</li>
+<li>束斑越细，产生二次电子的面积越小</li>
+<li>分辨率高</li>
+</ul>
+<h4 id="_4">背散射电子</h4>
+<ul>
+<li>入射电子在试样中受到原子核卢瑟福散射而形成的<strong>大角度散射电子</strong></li>
+<li>分辨率较低（薄样品在TEM里做扫描透射像的分辨率也不低）</li>
+<li>对试样的原子序数变化敏感，产额随原子序数增加而增加，适合观察成分的空间分布</li>
+<li>衬度主要与原子序数有关，与表面形貌也有一定的关系</li>
+<li>能反映试样离表面较深处的情况</li>
+</ul>
+<h4 id="_5">吸收电子</h4>
+<ul>
+<li>与二次电子、背散射电子相反</li>
+</ul>
+<h4 id="x">特征X射线</h4>
+<ul>
+<li>
+<p>外层向内层跃迁，同时放出特征X射线</p>
+<div class="arithmatex">\[
+\lambda=\frac1{(Z-\sigma)^2}
+\]</div>
+</li>
+</ul>
+<h4 id="_6">俄歇电子</h4>
+<ul>
+<li>给出表面信息，SEM中用的不多</li>
+</ul>
+<h2 id="sem_2">SEM衬度原理</h2>
+<p>衬度三大来源：</p>
+<ul>
+<li>试样本身性质（表面凹凸、成分差别、位相差异、表面电位分布）</li>
+<li>信号本身性质（二次电子、背散射电子、吸收电子）</li>
+<li>对信号的人工处理</li>
+</ul>
+<h3 id="_7">二次电子</h3>
+<ul>
+<li>二次电子产额：随入射电子能量先增加后减少</li>
+<li>角分布：余弦规律（表面上放一个圆），表面法线方向信号最大</li>
+<li>产额与入射角：入射角越大，产额越高</li>
+</ul>
+<p><strong>形貌衬度</strong>：与发射面和收集器之间的角度有关</p>
+<p><strong>原子序数衬度</strong>：不明显</p>
+<p><strong>电压差衬度</strong>：试样表面负电位处二次电子逸出容易，故衬度大</p>
+<p><strong>充电现象</strong>：非导电材料表面的电荷积累导致衬度过亮</p>
+<h3 id="_8">背散射电子</h3>
+<blockquote>
+<p>背散射系数<span class="arithmatex">\(\eta\)</span>：一个初始电子产生一个能量大于50eV而小于初始能量的电子的几率</p>
+</blockquote>
+<p><span class="arithmatex">\(\eta\)</span> 随靶原子序数Z的增加而增加，入射电子束影响小：</p>
+<ul>
+<li>Z &lt; 47: <span class="arithmatex">\(\eta\)</span> 随入射电子能量的增加而降低</li>
+<li>Z = 47: <span class="arithmatex">\(\eta\)</span> 随入射电子能量的增加而没啥变化</li>
+<li>Z &gt; 47: <span class="arithmatex">\(\eta\)</span> 随入射电子能量的增加而增加</li>
+</ul>
+<p>入射电子方向对<span class="arithmatex">\(\eta\)</span>的影响：</p>
+<ul>
+<li>垂直入射时，分布近似余弦规律，发射方向随机</li>
+<li>倾斜入射时：向前的棒形</li>
+<li>随入射角增加，背散射电子数也相应增加。接近掠射角时接近1</li>
+</ul>
+<p><strong>衬度</strong>：主要是原子序数衬度，重元素亮，轻元素暗</p>
+<p>可以用来看析出物成分</p>
+<p>利用一对对称的探测器AB，作加减法可以分离形貌像与成分像（利用对称性）</p>
+<p>背散射成分分析时为避免形貌衬度干扰，可以做表面抛光</p>
+<h3 id="_9">扫描透射电子像</h3>
+<p>薄试样的透射电子可以成像（STEM像）</p>
+<ul>
+<li>基本不受色差的影响。像的质量比一般TEM要好</li>
+<li>可以用能量分析器选择某个能量的弹性散射电子来分析</li>
+<li>能量损失与试样成分有关，非弹性散射电子像（特征能量损失电子像）也可以用来显示元素分布</li>
+<li>一般都是TEM里测出来的（因为样品很薄），除非给SEM装一个特殊的样品台（STEM-in-SEM）</li>
+</ul>
+<h2 id="_10">分辨率与放大倍数</h2>
+<h3 id="_11">电子束影响</h3>
+<div class="arithmatex">\[
+d^2=d_0^2+d_s^2+d_c^2+d_f^2
+\]</div>
+<blockquote>
+<p><span class="arithmatex">\(d\)</span>：实际电子束直径</p>
+<p><span class="arithmatex">\(d_0\)</span>：电子枪发出的电子束直径</p>
+<p><span class="arithmatex">\(d_s=1/2 C_s\alpha^3\)</span>：球差漫散圆直径</p>
+<p><span class="arithmatex">\(d_c=C_c\alpha \Delta V_0/V_0\)</span>：色差漫散圆直径</p>
+<p><span class="arithmatex">\(d_f=1.22\times10^{-10}\sqrt{150}/(\alpha V_0)\)</span>：衍射效应导致的电子束漫散圆直径</p>
+</blockquote>
+<p>球差为最主要因素，<span class="arithmatex">\(d^2=d_0^2+d_s^2=d_0^2+1/2C_s\alpha^3\)</span></p>
+<h3 id="_12">信噪比影响</h3>
+<p>信噪比</p>
+<div class="arithmatex">\[
+P=\sqrt{\frac{I_s\tau}{Ne}}
+\]</div>
+<blockquote>
+<p><span class="arithmatex">\(I_s\)</span>：探测器接受到的信号，与电子束流<span class="arithmatex">\(I_p\)</span>成正比</p>
+<p><span class="arithmatex">\(\tau\)</span>：帧扫描时间</p>
+<p><span class="arithmatex">\(N\)</span>：像元数目</p>
+</blockquote>
+<p>优化思路</p>
+<ul>
+<li>增大电子束流：用强电子源（LaB6枪或场发射枪）<strong>提高亮度</strong>；增大束斑（会降低分辨率）</li>
+<li><strong>加长帧扫描时间</strong>：最慢100s（电路稳定度限制不能太长</li>
+<li>减少像元数目（会降低清晰度</li>
+</ul>
+<h3 id="_13">放大倍数</h3>
+<div class="arithmatex">\[
+M=\frac l L
+\]</div>
+<blockquote>
+<p><span class="arithmatex">\(l\)</span>：荧光屏长度</p>
+<p><span class="arithmatex">\(L\)</span>：电子束在试样上扫过的长度</p>
+</blockquote>
+<h2 id="_14">性能特点</h2>
+<h3 id="_15">分辨率</h3>
+<p>二次电子像分辨率最高，一般说的分辨率就是二次电子像的。</p>
+<p>热钨丝发射电子枪一般30-60A</p>
+<p>场发射枪一般10-20A</p>
+<p>顶级：个位数A</p>
+<h3 id="_16">放大倍数</h3>
+<p>连续可调，断口分析</p>
+<h3 id="_17">景深</h3>
+<p>景深很大</p>
+<div class="arithmatex">\[
+D=\frac{0.2}{\alpha M}\text{(mm)}
+\]</div>
+<p>放大倍数越小，景深越大。</p>
+<h2 id="_18">背散射电子衍射分析</h2>
+<p>摆</p>
+<h2 id="_19">可变气压/环境扫描电镜</h2>
+<p>摆</p>
+<h2 id="_20">金属材料典型断口分析</h2>
+<p>摆</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../%E7%AC%AC6%E7%AB%A0-%E7%94%B5%E5%AD%90%E5%83%8F%E8%A1%AC%E5%BA%A6/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 电子像衬度原理" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              电子像衬度原理
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+    
+  </body>
+</html>

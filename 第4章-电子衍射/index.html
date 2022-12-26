@@ -1,0 +1,1365 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>电子衍射 - LearnTEM</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="LearnTEM" class="md-header__button md-logo" aria-label="LearnTEM" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LearnTEM
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              电子衍射
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="LearnTEM" class="md-nav__button md-logo" aria-label="LearnTEM" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    LearnTEM
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        zsx的电子显微分析预习笔记
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC1%E7%AB%A0-%E7%94%B5%E5%AD%90%E5%85%89%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        电子光学基础
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC2%E7%AB%A0-%E9%80%8F%E5%B0%84%E7%94%B5%E5%AD%90%E6%98%BE%E5%BE%AE%E9%95%9C/" class="md-nav__link">
+        TEM
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC3%E7%AB%A0-%E7%94%B5%E5%AD%90%E5%92%8C%E7%89%A9%E8%B4%A8%E7%9A%84%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8/" class="md-nav__link">
+        电子与物质的相互作用
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          电子衍射
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        电子衍射
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    电子衍射原理
+  </a>
+  
+    <nav class="md-nav" aria-label="电子衍射原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    布拉格定律
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ewald" class="md-nav__link">
+    倒易点阵和Ewald作图
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    结构因子
+  </a>
+  
+    <nav class="md-nav" aria-label="结构因子">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    消光
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    干涉函数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    衍射花样与晶体几何关系
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    倒易点阵平面及其画法
+  </a>
+  
+    <nav class="md-nav" aria-label="倒易点阵平面及其画法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    晶带定律
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    二维倒易点阵平面画法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    选区电子衍射
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    多晶电子衍射花样和相机长度标定
+  </a>
+  
+    <nav class="md-nav" aria-label="多晶电子衍射花样和相机长度标定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    立方晶系
+  </a>
+  
+    <nav class="md-nav" aria-label="立方晶系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fcc" class="md-nav__link">
+    FCC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bcc" class="md-nav__link">
+    BCC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sc" class="md-nav__link">
+    SC
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    四方晶系
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    六方晶系
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    多晶花样标定步骤
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    单晶电子衍射花样
+  </a>
+  
+    <nav class="md-nav" aria-label="单晶电子衍射花样">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zolz" class="md-nav__link">
+    零阶劳厄带ZOLZ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    单晶电子衍射花样的标定
+  </a>
+  
+    <nav class="md-nav" aria-label="单晶电子衍射花样的标定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    已知结构确定取向
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    未知结构鉴定物相
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    能看到单晶衍射谱的原因
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    衍射花样和晶体几何关系
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    四方晶系衍射谱标定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    六方晶系衍射谱标定
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    其它电子衍射谱
+  </a>
+  
+    <nav class="md-nav" aria-label="其它电子衍射谱">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    单晶、多晶、非晶
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    织构
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    二次衍射
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    高阶劳厄带
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    菊池线
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC5%E7%AB%A0-%E5%A4%8D%E6%9D%82%E7%94%B5%E5%AD%90%E8%A1%8D%E5%B0%84%E8%B0%B1/" class="md-nav__link">
+        复杂电子衍射谱
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC6%E7%AB%A0-%E7%94%B5%E5%AD%90%E5%83%8F%E8%A1%AC%E5%BA%A6/" class="md-nav__link">
+        电子像衬度原理
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC7%E7%AB%A0-SEM/" class="md-nav__link">
+        SEM
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    电子衍射原理
+  </a>
+  
+    <nav class="md-nav" aria-label="电子衍射原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    布拉格定律
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ewald" class="md-nav__link">
+    倒易点阵和Ewald作图
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    结构因子
+  </a>
+  
+    <nav class="md-nav" aria-label="结构因子">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    消光
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    干涉函数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    衍射花样与晶体几何关系
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    倒易点阵平面及其画法
+  </a>
+  
+    <nav class="md-nav" aria-label="倒易点阵平面及其画法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    晶带定律
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    二维倒易点阵平面画法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    选区电子衍射
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    多晶电子衍射花样和相机长度标定
+  </a>
+  
+    <nav class="md-nav" aria-label="多晶电子衍射花样和相机长度标定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    立方晶系
+  </a>
+  
+    <nav class="md-nav" aria-label="立方晶系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fcc" class="md-nav__link">
+    FCC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bcc" class="md-nav__link">
+    BCC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sc" class="md-nav__link">
+    SC
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    四方晶系
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    六方晶系
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    多晶花样标定步骤
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    单晶电子衍射花样
+  </a>
+  
+    <nav class="md-nav" aria-label="单晶电子衍射花样">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zolz" class="md-nav__link">
+    零阶劳厄带ZOLZ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    单晶电子衍射花样的标定
+  </a>
+  
+    <nav class="md-nav" aria-label="单晶电子衍射花样的标定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    已知结构确定取向
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    未知结构鉴定物相
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    能看到单晶衍射谱的原因
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    衍射花样和晶体几何关系
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    四方晶系衍射谱标定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    六方晶系衍射谱标定
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    其它电子衍射谱
+  </a>
+  
+    <nav class="md-nav" aria-label="其它电子衍射谱">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    单晶、多晶、非晶
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    织构
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    二次衍射
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    高阶劳厄带
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    菊池线
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">电子衍射</h1>
+<h2 id="_2">电子衍射原理</h2>
+<h3 id="_3">布拉格定律</h3>
+<p>Bragg's Law</p>
+<div class="arithmatex">\[
+2d_{hkl}\sin\theta=n\lambda
+\]</div>
+<p>干涉指数<span class="arithmatex">\(d_{nhnknl}=\frac{d_hkl}{n}\)</span></p>
+<p><span class="arithmatex">\(\lambda\le2d\)</span> 时才产生Bragg衍射</p>
+<p>能产生Bragg衍射的晶面几乎平行于入射束</p>
+<h3 id="ewald">倒易点阵和Ewald作图</h3>
+<p>倒易点阵固物X光都讲过了，不说了（</p>
+<p><img src="../第4章-电子衍射-img/image-20221119005941474.png" alt="image-20221119005941474" style="zoom:50%;" /></p>
+<h3 id="_4">结构因子</h3>
+<p>入射波被两个点散射，两散射波的光程差</p>
+<div class="arithmatex">\[
+\delta_{OA}=\overline{BO}+\overline{OC}=-K_0\cdot r_n+K_g\cdot r_n=(K_g-K_0)\cdot r_n
+\]</div>
+<p>电子束受到单胞散射的合成振幅</p>
+<div class="arithmatex">\[
+F=\sum_{j=1}^nf_j\exp2\pi i(K_g-K_0)\cdot r_j
+\]</div>
+<p>代入衍射条件<span class="arithmatex">\(K_g-K_0=g\)</span>，<span class="arithmatex">\(g\)</span>为倒空间点阵矢量，<span class="arithmatex">\(r_j\)</span>是为正空间点阵矢量</p>
+<div class="arithmatex">\[
+F_{hkl}=\sum_{j=1}^nf_j\exp2\pi i(hx_j+ky_j+lz_j)
+\]</div>
+<p>衍射强度正比于振幅平方，F=0意味着消光</p>
+<p>（推导不写了）</p>
+<h4 id="_5">消光</h4>
+<ul>
+<li>FCC：只有全奇全偶有振幅，其余全消光</li>
+<li>BCC：hkl和为偶数有振幅，奇数消光</li>
+</ul>
+<h3 id="_6">干涉函数</h3>
+<p>（X光课上好像管这个叫劳埃函数）</p>
+<p>真实晶体大小有限且内部有缺陷，因此倒易点有一定大小，使得产生电子衍射的可能性增加</p>
+<p>取一个柱晶（z方向上堆叠），所有单胞的合成振幅：</p>
+<div class="arithmatex">\[
+A=\sum_{n=1}^{N_z}F_n\exp(i2\pi(K_g-K_0)\cdot r)
+\]</div>
+<p>若满足了布拉格条件，则所有单胞具有相同位相，<span class="arithmatex">\(A=N_zF\)</span></p>
+<p>若衍射方向有偏离：<span class="arithmatex">\(K_g-K_0=g+s\)</span></p>
+<div class="arithmatex">\[
+A=\sum_{n=1}^{N_z}F_n\exp{(i2\pi s\cdot r)}
+\]</div>
+<div class="arithmatex">\[
+A=F\frac{\sin(\pi sN_zc)}{\pi s}e^{i\pi sN_zc}
+\]</div>
+<div class="arithmatex">\[
+I=|A|^2=|F|^2\frac{\sin^2(\pi sN_zc)}{(\pi s)^2}
+\]</div>
+<p>后面一坨就是干涉函数了，其<strong>主极大值两边的零点</strong>决定了相干散射的范围</p>
+<p>晶体越薄，参加相干散射的单胞越少，倒易点的拉长越多，与Ewald球的相切机会越大</p>
+<p>（三维的不说了，叠一遍就行</p>
+<h3 id="_7">衍射花样与晶体几何关系</h3>
+<p><img alt="image-20221119211739041" src="../%E7%AC%AC4%E7%AB%A0-%E7%94%B5%E5%AD%90%E8%A1%8D%E5%B0%84-img/image-20221119211739041.png" /></p>
+<p>近似公式<span class="arithmatex">\(rd=L\lambda\)</span>，一般<span class="arithmatex">\(L\lambda\)</span>已知（仪器常数），可以用来求d</p>
+<h2 id="_8">倒易点阵平面及其画法</h2>
+<h3 id="_9">晶带定律</h3>
+<p>晶带：与一个晶体学方向[uvw]平行的一组晶面族的总称，[uvw]方向称为晶带轴</p>
+<p>晶带中晶面族的倒格矢垂直于晶带轴<span class="arithmatex">\(hu+kv+lw=0\)</span></p>
+<h3 id="_10">二维倒易点阵平面画法</h3>
+<p>已知晶体结构，画<span class="arithmatex">\((uvw)^*\)</span>倒易面</p>
+<ol>
+<li>先蒙两个低指数的</li>
+<li>求和，画个平行四边形，再往外扩展（立方晶系的话最好优先找直角）</li>
+<li>除去消光的点</li>
+<li>查查有没有漏掉的</li>
+</ol>
+<h2 id="_11">选区电子衍射</h2>
+<h2 id="_12">多晶电子衍射花样和相机长度标定</h2>
+<p>参考X光，多晶的衍射花样是一系列同心圆环。重要公式：</p>
+<div class="arithmatex">\[
+r=L\lambda/d
+\]</div>
+<p>对同一衍射花样，<span class="arithmatex">\(L\lambda\)</span>是定值，故</p>
+<div class="arithmatex">\[
+r_1:r_2:r_3:\dots:r_j:\dots=\frac1{d_1}:\frac1{d_2}:\frac1{d_3}:\dots:\frac1{d_j}\dots
+\]</div>
+<h3 id="_13">立方晶系</h3>
+<div class="arithmatex">\[
+d=\cfrac{a}{\sqrt{h^2+k^2+l^2}}=\frac{a}{\sqrt{N}}
+\]</div>
+<div class="arithmatex">\[
+r_1:r_2:r_3:\cdots=\sqrt{N_1}:\sqrt{N_2}:\sqrt{N_3}:\cdots
+\]</div>
+<h4 id="fcc">FCC</h4>
+<table>
+<thead>
+<tr>
+<th>111</th>
+<th>200</th>
+<th>220</th>
+<th>311</th>
+<th>222</th>
+<th>400</th>
+<th>331</th>
+<th>422</th>
+<th>...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>4</td>
+<td>8</td>
+<td>11</td>
+<td>12</td>
+<td>16</td>
+<td>19</td>
+<td>20</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<h4 id="bcc">BCC</h4>
+<table>
+<thead>
+<tr>
+<th>110</th>
+<th>200</th>
+<th>211</th>
+<th>220</th>
+<th>310</th>
+<th>222</th>
+<th>321</th>
+<th>...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>4</td>
+<td>6</td>
+<td>8</td>
+<td>10</td>
+<td>12</td>
+<td>14</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sc">SC</h4>
+<table>
+<thead>
+<tr>
+<th>100</th>
+<th>110</th>
+<th>111</th>
+<th>200</th>
+<th>210</th>
+<th>211</th>
+<th>220</th>
+<th>...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>8</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<p>金刚石：3、8、11、16、19、24...</p>
+<h3 id="_14">四方晶系</h3>
+<div class="arithmatex">\[
+d=\frac{1}{\sqrt{\cfrac{h^2+k^2}{a^2}+\cfrac{l^2}{c^2}}}
+\]</div>
+<p>取<span class="arithmatex">\(M=h^2+k^2\)</span>，对<span class="arithmatex">\(l=0\)</span>的衍射环</p>
+<div class="arithmatex">\[
+r^2_1:r^2_2:r^2_3:\dots=M_1:M_2:M_3:\cdots=1:2:4:5:8:9:10:13:16:17:18:\cdots
+\]</div>
+<h3 id="_15">六方晶系</h3>
+<div class="arithmatex">\[
+d=\frac1{\sqrt{\cfrac{4}3\cfrac{h^2+hk+k^2}{a^2}+\cfrac{l^2}{c^2}}}
+\]</div>
+<p>令<span class="arithmatex">\(P=h^2+hk+k^2\)</span>，对l=0</p>
+<div class="arithmatex">\[
+r^2_1:r^2_2:r^2_3:\dots=P_1:P_2:P_3:\cdots=1:3:4:7:9:12:13:16:19:21:\cdots
+\]</div>
+<h3 id="_16">多晶花样标定步骤</h3>
+<ol>
+<li>利用已知样品，确定仪器常数<span class="arithmatex">\(L\lambda\)</span></li>
+<li>测定衍射环半径（为减小误差可以先测直径再转成半径）</li>
+<li>计算<span class="arithmatex">\(r^2\)</span>，分析规律，得出N值（若为立方晶系）</li>
+<li>根据晶体结构标定各衍射环的指数，并从ASTM卡片中找出对应的晶面间距</li>
+<li><span class="arithmatex">\(r_id_i=L\lambda\)</span>，计算出仪器常数，取平均值</li>
+<li>已知仪器常数，根据衍射花样，确定样品的晶体对称性</li>
+<li>测衍射环半径</li>
+<li>计算<span class="arithmatex">\(r^2\)</span>，分析规律，估计晶体结构或点阵</li>
+<li><span class="arithmatex">\(r_id_i=L\lambda\)</span>计算<span class="arithmatex">\(d_i\)</span></li>
+<li>估计各衍射环的相对强度，由三强线的d值查ASTM卡片索引，最终确定物相</li>
+</ol>
+<p>常用标准样品有TlCl、Au、Al等，可以真空蒸发沉积得到细小多晶薄膜</p>
+<h2 id="_17">单晶电子衍射花样</h2>
+<p>只有在倒易原点<span class="arithmatex">\(O^*\)</span>附近，与Ewald球相交的那些倒易阵点所代表的晶面满足Bragg定律产生衍射束</p>
+<h3 id="zolz">零阶劳厄带ZOLZ</h3>
+<p>晶带[uvw]中所有晶面的倒易阵点或倒易矢量必须都在垂直于[uvw]且过倒易原点<span class="arithmatex">\(O^*\)</span>的一个倒易平面内，记作<span class="arithmatex">\((uvw)_0^*\)</span>，称为零阶劳厄带</p>
+<p>相应的，不过倒易原点的倒易面，即<span class="arithmatex">\(hu+kv+lw=N\)</span>的倒易面称为<strong>高阶（N阶）劳厄带</strong></p>
+<h3 id="_18">单晶电子衍射花样的标定</h3>
+<ol>
+<li>衍射谱相当于一个倒易平面，如电子束的入射方向与晶体[uvw]方向平行，则产生衍射的晶面指数为{hkl}，遵循晶带定律<span class="arithmatex">\(hu+kv+lw=0\)</span></li>
+<li>根据衍射花样与晶体间的几何关系，各衍射斑点到中央透射斑点O的距离满足<span class="arithmatex">\(rd=L\lambda\)</span></li>
+<li>两个不同方向的倒易矢量确定一个倒易点阵平面<span class="arithmatex">\((uvw)_0^*\)</span>（参考先前的倒易点阵平面画法）</li>
+</ol>
+<p>分析包括两类：</p>
+<ul>
+<li>已知晶体结构，根据衍射花样确定晶体取向</li>
+<li>对于未知结构，通过衍射花样确定物相</li>
+</ul>
+<h4 id="_19">已知结构确定取向</h4>
+<ol>
+<li>
+<p>看看是不是简单电子衍射谱（满足晶带定律）。如果是，在花样上选3个离中心最近的衍射斑点P1P2P3，和中心构成平行四边形，测量三个点到中心的距离</p>
+</li>
+<li>
+<p>测所选衍射斑点的夹角</p>
+</li>
+<li>
+<p><span class="arithmatex">\(rd=L\lambda\)</span>将距离换成面间距d</p>
+</li>
+<li>
+<p>查ASTM表，确定晶面族</p>
+</li>
+<li>
+<p>试探法选一套指数符合<span class="arithmatex">\(h_3k_3l_3=h_1k_1l_1+h_2k_2l_2\)</span></p>
+</li>
+<li>
+<p>代入晶面夹角公式</p>
+</li>
+</ol>
+<div class="arithmatex">\[
+\cos\phi=\frac{h_1h_2+k_1k_2+l_1l_2}{\sqrt{h_1^2+k_1^2+l_1^2}\sqrt{h_2^2+k_2^2+l_2^2}}
+\]</div>
+<p>核对，一致则说明蒙对了，不对就重来</p>
+<ol>
+<li>
+<p>矢量相加法标出其余斑点，用晶带定律进一步核实指数</p>
+</li>
+<li>
+<p>反求出晶带轴指数（叉乘），定义晶带轴指数和入射电子束方向反平行</p>
+</li>
+</ol>
+<p><strong>太**抽象了，建议看课本P88例4.4过一遍流程</strong></p>
+<h4 id="_20">未知结构鉴定物相</h4>
+<ol>
+<li>看看是不是简单电子衍射谱（满足晶带定律）。如果是，在花样上选3个离中心最近的衍射斑点P1P2P3，和中心构成平行四边形，测量三个点到中心的距离  ~~和之前一样~~</li>
+<li>测衍射斑点之间夹角</li>
+<li><span class="arithmatex">\(rd=L\lambda\)</span>将距离换成面间距d</li>
+<li>根据成分、工艺及其它信息猜物相，并找到ASTM卡片，对照得到{hkl}</li>
+<li>试探法选指数</li>
+<li>计算是否夹角相符</li>
+<li>如果都没问题，说明物相猜对了</li>
+<li>确定晶带轴</li>
+</ol>
+<p>~~这不就是和前面一样吗~~</p>
+<p>注意标定的晶带方向具有180°不确定性</p>
+<h3 id="_21">能看到单晶衍射谱的原因</h3>
+<ul>
+<li>Ewald球半径大（电子波长短），且样品很薄，倒易点拉长成倒易杆，容易同时截到，产生多个衍射斑点</li>
+<li>电子束有一定发散度</li>
+<li>薄晶体试样不一定平整</li>
+<li>加速电压不稳定导致Ewald球半径扫动</li>
+</ul>
+<h3 id="_22">衍射花样和晶体几何关系</h3>
+<p>对称性快速判断晶系：</p>
+<ul>
+<li>四方点列：四方晶系、立方晶系</li>
+<li>六角点列：六角、三角、立方晶系</li>
+<li>六次对称衍射谱：六角、立方晶系</li>
+</ul>
+<p>运用排除法等，结合多个角度的衍射谱判断</p>
+<h3 id="_23">四方晶系衍射谱标定</h3>
+<div class="arithmatex">\[
+\frac1{d^2}=\frac{h^2+k^2}{a^2}+\frac{l^2}{c^2}
+\]</div>
+<div class="arithmatex">\[
+a^*=\frac1a,\ \ c^*=\frac1c,\ \ M=h^2+k^2
+\]</div>
+<div class="arithmatex">\[
+\frac1{d^2}=M{a^*}^2+l^2{c^*}^2
+\]</div>
+<p>M规律：1，2，4，5，8，9，10，13，16，17，18，20……</p>
+<p>任意一个M乘2就可以得到另一个允许的M</p>
+<p>包含2的因子的反射都是{hk0}形式，可以求点阵常数a，再求出c</p>
+<p>规律：</p>
+<ul>
+<li>不同晶面l指数相同时</li>
+</ul>
+<div class="arithmatex">\[
+\frac1{d_1^2}-\frac1{d_2^2}=(M_1-M_2){a^*}^2
+\]</div>
+<p>通过一系列相减可以得出<span class="arithmatex">\({a^*}^2\)</span></p>
+<ul>
+<li>不同衍射晶面的M相同时，有</li>
+</ul>
+<div class="arithmatex">\[
+\frac1{d_1^2}-\frac1{d_2^2}=(l_1^2-l_2^2){c^*}^2
+\]</div>
+<p>一系列相减可以得到<span class="arithmatex">\({c^*}^2\)</span>或<span class="arithmatex">\({c^*}^2\)</span>的倍数</p>
+<ul>
+<li>都不相同时</li>
+</ul>
+<div class="arithmatex">\[
+\frac1{d_1^2}-\frac1{d_2^2}=(M_1-M_2){a^*}^2+(l_1^2-l_2^2){c^*}^2
+\]</div>
+<p>有时需要查询ASTM卡片</p>
+<h3 id="_24">六方晶系衍射谱标定</h3>
+<div class="arithmatex">\[
+\frac1{d^2}=\frac{h^2+hk+k^2}{3a^2/4}+\frac{l^2}{c^2}=H{a^*}^2+l^2{c^*}^2
+\]</div>
+<p>H的3：1关系，但可能会被l掩盖</p>
+<p>（摆了）</p>
+<h2 id="_25">其它电子衍射谱</h2>
+<h3 id="_26">单晶、多晶、非晶</h3>
+<pre><code class="language-mermaid">graph LR
+单晶斑点--空间旋转--&gt;多晶环--&gt;非晶晕环
+</code></pre>
+<h3 id="_27">织构</h3>
+<p>（或许可以理解作单晶的有限空间旋转</p>
+<h3 id="_28">二次衍射</h3>
+<p>衍射束作为入射束再次发生衍射，可能导致结构因子为0的地方产生衍射斑点</p>
+<h3 id="_29">高阶劳厄带</h3>
+<p>提供倒空间中的三维信息</p>
+<h3 id="_30">菊池线</h3>
+<p>试样厚度较大且单晶较完整时出现，一系列平行的亮暗线</p>
+<p><strong>成因：</strong>经过非相干散射失去较少能量的电子随后又受到弹性散射所产生</p>
+<p>菊池线对转动非常敏感，相比之下单晶衍射斑点对小范围转动不敏感（几°以内）</p>
+<p><strong>用途：</strong>精确测定晶体取向，校正样品杆倾转角度，测定偏离矢量s</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../%E7%AC%AC3%E7%AB%A0-%E7%94%B5%E5%AD%90%E5%92%8C%E7%89%A9%E8%B4%A8%E7%9A%84%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 电子与物质的相互作用" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              电子与物质的相互作用
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%E7%AC%AC5%E7%AB%A0-%E5%A4%8D%E6%9D%82%E7%94%B5%E5%AD%90%E8%A1%8D%E5%B0%84%E8%B0%B1/" class="md-footer__link md-footer__link--next" aria-label="Next: 复杂电子衍射谱" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              复杂电子衍射谱
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+    
+  </body>
+</html>
